@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,UACE,kBACF,CAEA,8BACE,aAAc,CACd,mBACF","file":"style.e08246c4.css","sourceRoot":"..\\src","sourcesContent":["/* styles go here */\n.fieldset {\n  margin-bottom: 20px;\n}\n\n.input-block:not(:last-child) {\n  display: block;\n  padding-bottom: 10px;\n}\n\n/* .submit {\n  margin: 10px;\n} */\n"]}
