@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta
@@ -10,8 +11,153 @@
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit()" autocomplete="off">
+
+      <fieldset class="fieldset">
+        <legend>Personal information</legend>
+
+        <div class="input-block">
+          <label for="fname">Surname:</label>
+          <input type="text" name="fname" id="fname">
+        </div>
+
+        <div class="input-block">
+          <label for="sname">Name:</label>
+          <input type="text" name="sname" id="sname">
+        </div>
+
+        <div class="input-block">
+          <label for="age">How old are You?</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="12"
+            max="100"
+            value="12"
+          >
+        </div>
+
+        <div class="input-block">
+          <label for="date">Full date of birth:</label>
+          <input type="date" name="date" id="date">
+        </div>
+
+        <div class="input-block">
+          <label for="terms">I accept the term of the agreement</label>
+          <input
+            type="checkbox"
+            name="terms"
+            id="terms"
+            required
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
+
+        <div class="input-block">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+          >
+        </div>
+
+        <div class="input-block">
+          <label for="pass">Password:</label>
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            minlength="8"
+            maxlength="16"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
+
+        <div class="input-block">
+          <label>
+            Do you love cats?
+            <input
+              type="radio"
+              name="cats"
+              value="yes"
+            >Yes
+            <input
+              type="radio"
+              name="cats"
+              value="no"
+            >No
+          </label>
+        </div>
+
+        <div class="input-block">
+          <label for="color">What is your favorite color:</label>
+          <input type="color" name="color" id="color">
+        </div>
+
+        <div class="input-block">
+          <label for="time">What time do you go to bed?</label>
+          <input type="time" name="time" id="time">
+        </div>
+
+        <div class="input-block">
+          <label for="tea">What are your favorite brand of cars?</label>
+          <select name="tea" id="tea" multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+            <option value=" "></option>
+          </select>
+        </div>
+
+        <div class="input-block">
+          <label for="proud">How do you rate our work?</label>
+          <input
+            type="range"
+            name="proud"
+            id="proud"
+            value="0"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Additional info:</legend>
+
+        <div class="input-block">
+          <label for="feedback">Comments:</label>
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="20"
+            rows="2"
+          ></textarea>
+        </div>
+
+        <div class="input-block">
+          <label for="longer">Would you recommend us?</label>
+          <select name="longer" id="longer">
+            <option value="yes1">Yes</option>
+            <option value="yes2">Definitely yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <button type="submit" name="submit" class="submit">Submit</button>
+    </form>
   </body>
+
 </html>
