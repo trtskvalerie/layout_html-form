@@ -1,6 +1,6 @@
 # HTML form
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://trtskvalerie.github.io/layout_html-form/)
+- [DEMO LINK](https://trtskvalerie.github.io/layout_html-form/src)
 - [TEST REPORT LINK](https://trtskvalerie.github.io/layout_html-form/backstop_data/html_report/index.html)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
